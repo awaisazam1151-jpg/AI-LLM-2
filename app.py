@@ -23,7 +23,7 @@ if user_question:
     try:
         # Generate the response using Gemini 2.0 Flash
         response = client.models.generate_content(
-            model="gemini-2.0-flash",
+            model="gemini-3.6-flash",
             contents=user_question,
             config=types.GenerateContentConfig(
                 # This instruction shapes the AI's teaching style
